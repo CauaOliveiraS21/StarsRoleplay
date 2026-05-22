@@ -1,35 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>STARS ROLEPLAY</title>
 
 <style>
-body{
-background:#0d0d0d;
-color:white;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial;
+}
+
+body{
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
 text-align:center;
-padding-top:200px;
+background:
+linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2070');
+
+background-size:cover;
+background-position:center;
 }
 
 h1{
-font-size:70px;
+font-size:90px;
 color:gold;
+text-shadow:0 0 25px gold;
 }
 
 p{
-color:#999;
-font-size:22px;
+margin-top:20px;
+font-size:24px;
+color:#ccc;
 }
-</style>
 
+.btn{
+margin-top:35px;
+padding:18px 45px;
+border:none;
+border-radius:14px;
+background:gold;
+color:black;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px gold;
+}
+
+.section{
+padding:100px 10%;
+}
+
+.cards{
+display:flex;
+gap:25px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:50px;
+}
+
+.card{
+width:250px;
+background:#111;
+border:1px solid #222;
+border-radius:20px;
+padding:30px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:gold;
+box-shadow:0 0 20px rgba(255,215,0,0.4);
+}
+
+.card h2{
+color:gold;
+margin-bottom:15px;
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:#0a0a0a;
+color:#666;
+}
+
+</style>
 </head>
+
 <body>
+
+<header>
 
 <h1>STARS ROLEPLAY</h1>
 
 <p>Sua nova experiência de Roleplay começa aqui.</p>
+
+<button class="btn">
+ENTRAR NO DISCORD
+</button>
+
+</header>
+
+<section class="section">
+
+<h1 style="font-size:50px;">VIPS</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2>VIP Bronze</h2>
+<p>Benefícios exclusivos dentro da cidade.</p>
+</div>
+
+<div class="card">
+<h2>VIP Prata</h2>
+<p>Mais vantagens e recompensas especiais.</p>
+</div>
+
+<div class="card">
+<h2>VIP Ouro</h2>
+<p>Experiência premium dentro da STARS.</p>
+</div>
+
+<div class="card">
+<h2>VIP Diamante</h2>
+<p>O máximo poder dentro da cidade.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© STARS ROLEPLAY - Todos os direitos reservados.
+</footer>
 
 </body>
 </html>
